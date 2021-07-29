@@ -1,4 +1,4 @@
-program FileLister;
+program objpos;
 
 {$APPTYPE CONSOLE}
 
