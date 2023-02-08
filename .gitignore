@@ -1,4 +1,4 @@
 
 __history/*
-objpos.dproj.local
-objpos.identcache
+*.identcache
+*.local
