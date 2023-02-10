@@ -88,6 +88,7 @@ begin
       else extra := '';
     if (dataarray[i+2] and $40) > 0 then extra := extra+',yflip'; // Check for yflip flag.
     if (dataarray[i+2] and $80) > 0 then extra := extra+',rem'; // Check for rem flag.
+    if (dataarray[i+2] and $10) > 0 then extra := extra+',unkflg'; // Check for unused Buzzer and Flasher flag.
     if Getword(i) = $ffff then WriteLn(outfile,#9+#9+'endobj') // End of file.
       else WriteLn(outfile,#9+#9+'objpos $'+xpos+',$'+ypos+','+idstr+',$'+subtype+extra);
     i := i+6; // Next object.
